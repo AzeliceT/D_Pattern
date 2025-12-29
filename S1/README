@@ -24,7 +24,9 @@ Structurel : composition des classes et objets
 -Decorator : technique qui permet d'augmenter le comportement d'un objet dynamiquement.(rajoute des fonctions a un objet dans certaine condition)
 
 -template Method/Strategy : définir une famille d'algorithme (regroupe des algo qui sont similaire avec quelque difference)
-	-strategy : une seul classe qui contient tout ce qui est en commun et utilise un Methode en paramètre (dans l'exemple du 		    cours c'est un comparateur).
+	-strategy : une seul classe qui contient tout ce qui est en commun et utilise un Methode en paramètre (dans l'exemple du cours c'est un comparateur).
+	          : Le pattern Strategy permet de définir une famille d’algorithmes, de les encapsuler et de les rendre interchangeables.
+
 	-template Method : la classe deviens abstract, appel le compare sur soi-meme (pas de classe externe), c'est les enfants qui 			   vont pouvoir comparé pas une classe externe.
 
 -composite : combine plusieurs objets similaire pour se comporter comme un objet unique. (exemple: des forme, on crée des cercle et 	     des carré donc si on veux les déplacer une a une classe composite qui regroupe toute dans une liste et fait les modifs  	     tout en meme temps). (arbres) (comment trouver : une classe qui implemente une autre classe et qui contient une liste 	     d'element de la classe qu'il implemente)
