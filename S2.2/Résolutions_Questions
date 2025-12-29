@@ -1,0 +1,9 @@
+onnez la correspondance entre les noms des classes utilisées dans la théorie et celle utilisées dans le code que vous écrirez.
+
+Théories => Code
+
+Component => Strategy
+
+Leaf => CommencePar, DeLongueur, Palindrome
+
+Composite => AND, OR, NOT

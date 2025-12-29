@@ -15,6 +15,7 @@ public class ListerMots1 { // mal foutu
 			StringTokenizer mots = new StringTokenizer(buffer, " \t.;(){}\"'*=:!/\\");
 			while (mots.hasMoreTokens()) {
 				String mot = mots.nextToken();
+
 				if (mot.charAt(0) == 't')
 					System.out.println(mot);
 			}
