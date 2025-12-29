@@ -1,0 +1,47 @@
+Type de pattern : Créationnel, comportemental, structurel 
+
+Créationnel : instancie les objets
+
+Comportemental : communication entre les objets
+
+Structurel : composition des classes et objets
+
+
+------------------------------------------------------------Pattern----------------------------------------------------------------
+
+-Singleton : une seul instance pour une classe donnée (attribue privé de type singleton ex: singleton:Singleton) (comment trouver : 	     attribut static + constructeur priver)
+
+-Prototype : crée des copie d'un objet passée en paramètre.
+
+-Observer (listener) : 
+
+-Iterator : permet d'itérer sur une collection (next()-> renvoie le prochain element, hasNext()->regarde si il y a un prochain element)
+
+-Facade : permet de simplifier la communication entre des classe compliquer en les reliant a la facade et donner accès a certaine méthode (ex: le front qui veux communiquer a plein de classe compliquer elle passe par la facade pour que ca soit plus simple et simplifier) (maniere de trouver : dans la classe main on vois qu'une seul classe)
+
+-flyweight : parfois on garde en memoire des instance d'objet et parfois on les reprend quand on en a besoin. a la place de recrée plein de fois les meme instance d'objet on en crée un qu'on réutilise.
+ 
+-Decorator : technique qui permet d'augmenter le comportement d'un objet dynamiquement.(rajoute des fonctions a un objet dans certaine condition)
+
+-template Method/Strategy : définir une famille d'algorithme (regroupe des algo qui sont similaire avec quelque difference)
+	-strategy : une seul classe qui contient tout ce qui est en commun et utilise un Methode en paramètre (dans l'exemple du 		    cours c'est un comparateur).
+	-template Method : la classe deviens abstract, appel le compare sur soi-meme (pas de classe externe), c'est les enfants qui 			   vont pouvoir comparé pas une classe externe.
+
+-composite : combine plusieurs objets similaire pour se comporter comme un objet unique. (exemple: des forme, on crée des cercle et 	     des carré donc si on veux les déplacer une a une classe composite qui regroupe toute dans une liste et fait les modifs  	     tout en meme temps). (arbres) (comment trouver : une classe qui implemente une autre classe et qui contient une liste 	     d'element de la classe qu'il implemente)
+
+
+open-close principle : quand je programme, y'a des classe qui sont ouverte et des classe fermé (ouverte quand je dois modifier des 			chose je peux modifier, classe fermé on ne va pas modifier la classe), la plupart de nos classe seront fermé 			a la modification et ouvert a l'extension (donc on peux pas modifier mais on peut étendre la classe pour 			rajouter des fonction ect..)
+
+-visitor : permet de faire une operation sur plusieurs classe différente.(souvent la quand il y a un pattern composite)
+
+-command pattern : encapsule une action a executer plus tard. 
+
+-Adapter : permet a des classe de travailler ensemble meme avec des interface incompatible (ex: fonction demande une list, mais j'ai 	   une arraylist donc on crée une classe adapter qui transforme mon arraylist en list) comme un adaptateur dans la vrai vie 	   ex: prise anglaise et française.
+
+-abstractFactory : c'est une strategy qui fais que des new
+
+-FactoryMethode : quand on fait une TemplateMethode (donc class abstract) mais que l'on fait que des new.
+
+-State : regroupe les different état qu'il peux y avoir en créant une classe State
+
+-Builder Pattern : crée une instance d'un objet avec des attributs optionnel en gardant les attribut Final dans la class instancier (voir ex5A semaine 5)
