@@ -1,0 +1,21 @@
+Donnez la correspondance entre les noms des classes utilisées dans la théorie et celle utilisées dans le code que vous écrirez.
+
+Noms Classes Théorie => Code
+
+Subject => AnalyseurDeTexte
+
+Observer => Observer
+
+ConcreteObserverA => ObsNbrLigne
+ConcreteObserverB => ObsNbrMots
+ConcreteObserverC => ObsNbrPalindromes
+ConcreteObserverD => ObsNbrMotPrecis
+
+___________________________________________
+
+Noms méthodes Théorie => Code
+
+update => traiterLigne
+observerCollection => List<Observer>
+registerObserver/unregisterObserver => (constructeur) add
+notify => observer.traiterLigne
