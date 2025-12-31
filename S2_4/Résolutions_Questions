@@ -1,0 +1,11 @@
+onnez la correspondance entre les noms des classes utilisées dans la théorie et celle utilisées dans le code que vous écrirez.
+
+Théories => Code
+
+Component => Strategy
+
+ConcreteComponent => And, Or, CommencePar, DeLongueur, Palindrome
+
+Decorator => Decorateur_Compteur
+
+ConcreteDecorator =>
