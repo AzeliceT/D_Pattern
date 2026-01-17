@@ -1,3 +1,5 @@
+package A;
+
 public interface Robot {
 	
 	int getCanon(); // retourne la puissance du canon
