@@ -9,7 +9,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-import validation.Generateur;
+import validation.*;
 
 import domaine.CarteDeCredit;
 
@@ -25,7 +25,14 @@ public class MainClient {
 					SimpleDateFormat sdf = new SimpleDateFormat("MM/yy");
 					Calendar dateExpiration = new GregorianCalendar();
 					dateExpiration.setTime(sdf.parse(parts[1]));
-					CarteDeCredit carteDeCredit = ???????(parts[0], dateExpiration, parts[2]);
+
+					Generateur chaine = new VisaGenerateur(
+										new AmExGenerateur(
+												new MasterCardGenerateur(
+														new DiscoverGenerateur(
+																new DinersClubGenerateur(null)))));
+
+					CarteDeCredit carteDeCredit = chaine.gererDemande(parts[0], dateExpiration, parts[2]);
 					if (carteDeCredit == null)
 						System.out.println("Numéro de carte invalide " + parts[0]);
 					else {
