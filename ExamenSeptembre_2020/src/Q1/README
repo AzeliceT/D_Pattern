@@ -1,0 +1,4 @@
+Règle d'or :
+
+Si tu dois créer une sous-classe (ex: PaypalCart extends Cart) juste pour changer une méthode, tu es dans Template Method.
+Si tu passes un objet en paramètre pour changer le comportement, tu es dans Strategy.
