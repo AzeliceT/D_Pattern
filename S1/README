@@ -47,5 +47,3 @@ open-close principle : quand je programme, y'a des classe qui sont ouverte et de
 -State : regroupe les different état qu'il peux y avoir en créant une classe State
 
 -A.Stats_Builder Pattern : crée une instance d'un objet avec des attributs optionnel en gardant les attribut Final dans la class instancier (voir ex5A semaine 5)
-
-test
